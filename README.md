@@ -3,12 +3,13 @@
 
 ## Step
 Tests revealed the following links in the site:
-http://xxx.cn/EpointWebBuilder/pageRedirectAction.action?cmd=pageRedirect&locationurl=http://xxx.cn&infoid=4a1ba0e4-95b3-4e58-9b8c-7530247b82a4
-The locationurl specifies the location where the visitor will be redirected, and the infoid parameter is directly related to the path of the redirected resource.
-However, the infoid and locationurl parameters have no validation beyond this.
+http://xxx.cn/EpointWebBuilder/pageRedirectAction.action?cmd=pageRedirect&locationurl=http://xxx.cn&infoid=4a1ba0e4-95b3-4e58-9b8c-7530247b82a4  
+The locationurl specifies the location where the visitor will be redirected, and the infoid parameter is directly related to the path of the redirected resource.  
+However, the infoid and locationurl parameters have no validation beyond this.  
 Therefore, make the following link: 
 http://xxx.cn/EpointWebBuilder/pageRedirectAction.action?cmd=pageRedirect&locationurl=http://google.com/%23&infoid=4a1ba0e4-95b3-4e58-9b8c-7530247b82a4 , 
-where the infoid parameter is directly related to the path of the redirected resource, which must be an existing UUID. The system will redirect the visitor to any location according to the locationurl parameter, which is google.com in the above example.
+where the infoid parameter is directly related to the path of the redirected resource, which must be an existing UUID.   
+The system will redirect the visitor to any location according to the locationurl parameter, which is google.com in the above example.
 302=>
 https://www.google.com/#/jyxx/001006/001006001/20230825/4a1ba0e4-95b3-4e58-9b8c-7530247b82a4.html
 ## Example
