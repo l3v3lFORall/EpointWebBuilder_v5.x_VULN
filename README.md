@@ -1,5 +1,17 @@
 # EpointWebBuilder_v5.x_VULN
 
+[CVE ID]
+> CVE-2024-24525
+
+[VulnerabilityType Other]
+> Open redirect vulnerability
+
+[Affected Product Code Base]
+> EpointWebBuilder - V5.x
+
+[CVE Impact Other]
+> allows a remote unauthenticated attacker to redirect users to arbitrary websites and conduct phishing attacks via a specially crafted URL.
+
 
 ## Step
 Tests revealed the following links in the site:
